@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Testimonials = () => {
   return (
     <div
-      id="testtimonials"
+      id="testimonials"
       className="px-6 py-12 max-w-7xl mt-4 mx-auto lg:px-8 lg:mt-4"
     >
       <h2 className="text-5xl sm:font-semibold mb-14 font-medium">

@@ -37,6 +37,51 @@ const setupIntersectionObserver = (
   intersectionObserver.observe(element);
 };
 
+const assets1 = [
+  { src: "/assets/asset 3.png", alt: "unbounce" },
+  { src: "/assets/asset 4.png", alt: "unbounce" },
+  { src: "/assets/asset 5.png", alt: "unbounce" },
+  { src: "/assets/asset 6.png", alt: "unbounce" },
+  { src: "/assets/asset 7.png", alt: "unbounce" },
+  { src: "/assets/asset 8.png", alt: "unbounce" },
+  { src: "/assets/asset 9.png", alt: "unbounce" },
+  { src: "/assets/asset 10.png", alt: "unbounce" },
+  { src: "/assets/asset 11.png", alt: "unbounce" },
+  { src: "/assets/asset 12.png", alt: "unbounce" },
+  { src: "/assets/asset 13.png", alt: "unbounce" },
+  { src: "/assets/asset 14.png", alt: "unbounce" },
+];
+
+const assets2 = [
+  { src: "assets/asset 15.png", alt: "unbounce" },
+  { src: "assets/asset 16.png", alt: "unbounce" },
+  { src: "assets/asset 17.png", alt: "unbounce" },
+  { src: "assets/asset 18.png", alt: "unbounce" },
+  { src: "assets/asset 19.png", alt: "unbounce" },
+  { src: "assets/asset 20.png", alt: "unbounce" },
+  { src: "assets/asset 21.png", alt: "unbounce" },
+  { src: "assets/asset 22.png", alt: "unbounce" },
+  { src: "assets/asset 23.png", alt: "unbounce" },
+  { src: "assets/asset 24.png", alt: "unbounce" },
+  { src: "assets/asset 25.png", alt: "unbounce" },
+  { src: "assets/asset 26.png", alt: "unbounce" },
+];
+
+const assets3 = [
+  { src: "assets/asset 27.png", alt: "unbounce" },
+  { src: "assets/asset 28.png", alt: "unbounce" },
+  { src: "assets/asset 29.png", alt: "unbounce" },
+  { src: "assets/asset 13.png", alt: "unbounce" },
+  { src: "assets/asset 5.png", alt: "unbounce" },
+  { src: "assets/asset 4.png", alt: "unbounce" },
+  { src: "assets/asset 24.png", alt: "unbounce" },
+  { src: "assets/asset 34.png", alt: "unbounce" },
+  { src: "assets/asset 35.png", alt: "unbounce" },
+  { src: "assets/asset 36.png", alt: "unbounce" },
+  { src: "assets/asset 37.png", alt: "unbounce" },
+  { src: "assets/asset 38.png", alt: "unbounce" },
+];
+
 const Main = () => {
   const line1Ref = useRef(null);
   const line2Ref = useRef(null);
@@ -148,126 +193,21 @@ const Main = () => {
                 id="line1"
                 className="flex gap-4 min-w-max -translate-x-48 transition-transform ease-linear"
               >
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="/assets/asset 3.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="/assets/asset 4.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="/assets/asset 5.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="/assets/asset 6.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="/assets/asset 7.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="/assets/asset 8.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="/assets/asset 9.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="/assets/asset 10.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="/assets/asset 11.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="/assets/asset 12.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="/assets/asset 13.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="/assets/asset 14.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
+                {assets1.map((item, index) => (
+                  <div
+                    key={index}
+                    className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32"
+                  >
+                    <img
+                      className="w-12 h-12 md:h-16 md:w-16"
+                      src={item.src}
+                      alt={item.alt}
+                    />
+                    <span className="text-[12px] md:text-[16px] font-semibold">
+                      Unbounce
+                    </span>
+                  </div>
+                ))}
               </div>
             </div>
             <div className="relative w-full overflow-hidden">
@@ -276,126 +216,21 @@ const Main = () => {
                 id="line2"
                 className="flex gap-4 min-w-max -translate-x-36 transition-transform ease-linear"
               >
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 15.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 16.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 17.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 18.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 19.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 20.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 21.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 22.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 23.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 24.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 25.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 26.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
+                {assets2.map((item, index) => (
+                  <div
+                    key={index}
+                    className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32"
+                  >
+                    <img
+                      className="w-12 h-12 md:h-16 md:w-16"
+                      src={item.src}
+                      alt={item.alt}
+                    />
+                    <span className="text-[12px] md:text-[16px] font-semibold">
+                      Unbounce
+                    </span>
+                  </div>
+                ))}
               </div>
             </div>
             <div className="relative w-full overflow-hidden">
@@ -404,126 +239,21 @@ const Main = () => {
                 id="line3"
                 className="flex md:hidden gap-4 min-w-max  -translate-x-48 transition-transform ease-linear"
               >
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 27.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 28.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 29.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 13.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 5.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 4.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 24.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 34.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 35.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 36.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 37.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
-                <div className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
-                  <img
-                    className="w-12 h-12 md:h-16 md:w-16"
-                    src="assets/asset 38.png"
-                    alt="unbounce"
-                  />
-                  <span className="text-[12px] md:text-[16px] font-semibold">
-                    Unbounce
-                  </span>
-                </div>
+                {assets3.map((item, index) => (
+                  <div
+                    key={index}
+                    className="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300 md:min-h-32 md:min-w-32"
+                  >
+                    <img
+                      className="w-12 h-12 md:h-16 md:w-16"
+                      src={item.src}
+                      alt={item.alt}
+                    />
+                    <span className="text-[12px] md:text-[16px] font-semibold">
+                      Unbounce
+                    </span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

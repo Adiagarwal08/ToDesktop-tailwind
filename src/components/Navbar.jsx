@@ -20,18 +20,18 @@ const Navbar = () => {
         <span className="text-lg font-medium">ToDesktop</span>
       </Link>
       <div id="nav-menu" className="hidden lg:flex gap-12 ">
-        <Link to="/" className="font-medium hover:text-[#3238f2]">
+        <a href="#pricing" className="font-medium hover:text-[#3238f2]">
           Pricing
-        </Link>
+        </a>
         <Link to="/" className="font-medium hover:text-[#3238f2]">
           Docs
         </Link>
         <Link to="/" className="font-medium hover:text-[#3238f2]">
           Changelog
         </Link>
-        <Link to="/" className="font-medium hover:text-[#3238f2]">
+        <a href="#testimonials" className="font-medium hover:text-[#3238f2]">
           Blogs
-        </Link>
+        </a>
         <Link to="/" className="font-medium hover:text-[#3238f2]">
           Login
         </Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
         <div id="nav-bar" className="flex justify-between">
           <Link to="/" className="flex gap-2 items-center">
             <img
-              src={download}
+              src="assets/asset 0.png"
               alt="logo"
               className="max-w-12 max-h-12 object-cover"
             />
